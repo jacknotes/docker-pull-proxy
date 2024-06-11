@@ -8,7 +8,7 @@ on:
   #   branches: [ main ]
 
 env:
-  ALIYUN_REGISTRY: "${{ secrets.ALIYUN_REGISTRY }}"
+  ALIYUN_REGISTRY: "harbor.homsom.com"
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
   MM_NOTIFY_URL: "${{ secrets.MM_NOTIFY_URL }}"
