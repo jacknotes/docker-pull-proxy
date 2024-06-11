@@ -7,7 +7,7 @@ on:
   #   branches: [ main ]
 
 env:
-  REGISTRY: registry.cn-hangzhou.aliyuncs.com
+  REGISTRY: harbor.homsom.com
   ALIYUN_REGISTRY_USER: "${{ secrets.ALIYUN_REGISTRY_USER }}"
   ALIYUN_REGISTRY_PASSWORD: "${{ secrets.ALIYUN_REGISTRY_PASSWORD }}"
   MM_NOTIFY_URL: "${{ secrets.MM_NOTIFY_URL }}"
@@ -31,8 +31,8 @@ jobs:
         data=`cat trigger.txt`
 
         if [ $MM_NOTIFY_URL ];then
-          curl  -H 'Content-Type: application/json' \
-            -d "{\"msgtype\": \"text\",\"text\": {\"content\":\"同步成功 $data \"}}" \
+          curl -X POST -H 'Content-Type: application/json' \
+            -d "{\"msg_type\": \"text\",\"content\": {\"text\":\"同步成功 $data \"}}" \
             $MM_NOTIFY_URL
         else
           echo 'MM_NOTIFY_URL not set'

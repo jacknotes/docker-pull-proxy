@@ -1,1 +1,1 @@
-homeassistant/home-assistant:2024.6 registry.cn-hangzhou.aliyuncs.com/yaming116/home-assistant:2024.6
+nginx:1.26.1-alpine https://harbor.homsom.com/public/nginx:1.26.1-alpine
