@@ -1,1 +1,1 @@
-nginx:1.26.1-alpine https://harbor.homsom.com/public/nginx:1.26.1-alpine
+nginx:1.26.1-alpine harbor.homsom.com/public/nginx:1.26.1-alpine
