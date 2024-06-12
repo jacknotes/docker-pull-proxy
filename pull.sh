@@ -25,10 +25,4 @@ cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} '
 cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} ' | sh
 
 
-# debug
-echo '$MM_NOTIFY_URL: ' $MM_NOTIFY_URL 
-echo '$ALIYUN_REGISTRY: ' $ALIYUN_REGISTRY 
-echo '$ALIYUN_REGISTRY_USER: ' $ALIYUN_REGISTRY_USER 
-echo '$ALIYUN_REGISTRY_PASSWORD: ' $ALIYUN_REGISTRY_PASSWORD 
-
 
