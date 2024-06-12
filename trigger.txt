@@ -1,1 +1,1 @@
-nginx:1.26.1-alpine harbor.homsom.com/public/nginx:1.26.1-alpine
+whyour/qinglong:2.15.16 harbor.homsom.com/public/whyour/qinglong:2.15.16
