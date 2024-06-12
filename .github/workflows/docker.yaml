@@ -30,7 +30,7 @@ jobs:
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         sh pull.sh
         
-        data=`cat trigger.txt`
+        data=`cat trigger.txt | grep -Ev '^#|^$'`
         
         if [ $MM_NOTIFY_URL ];then
           curl -X POST -H "Content-Type: application/json"  -d "{\"msg_type\":\"text\",\"content\":{\"text\":\"同步成功 $data\"}}" $MM_NOTIFY_URL
