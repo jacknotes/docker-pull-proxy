@@ -27,14 +27,25 @@ jobs:
 
     - name: Build and push image to ACR EE
       run: |
+        if ! [ $MM_NOTIFY_URL ];then
+          echo 'MM_NOTIFY_URL not set'
+        fi
+        
+        data=`cat trigger.txt`
+        
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
         sh pull.sh
-        data=`cat trigger.txt`
-
-        if [ $MM_NOTIFY_URL ];then
+        
+        if ! [ $? == 0 ];then
+          curl -X POST -H 'Content-Type: application/json' \
+            -d "{\"msg_type\": \"text\",\"content\": {\"text\":\"同步失败 $data \"}}" \
+            $MM_NOTIFY_URL
+        else
           curl -X POST -H 'Content-Type: application/json' \
             -d "{\"msg_type\": \"text\",\"content\": {\"text\":\"同步成功 $data \"}}" \
             $MM_NOTIFY_URL
-        else
-          echo 'MM_NOTIFY_URL not set'
         fi
+
+        
+
+        
