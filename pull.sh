@@ -5,32 +5,30 @@
 # "Architecture": "arm64",
 
 # 不指定 cpu 架构
-cat trigger.txt |awk '{print "docker pull " $1} ' | tee ./docker_pull.sh 
-sh ./docker_pull.sh 
-#cat trigger.txt |awk '{print "docker pull " $1} '| sh
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker pull " $1} '
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker pull " $1} ' | sh
 
 #指定 cpu 架构
-# cat trigger.txt |awk '{print "docker pull --platform linux/arm64 " $1} '
-# cat trigger.txt |awk '{print "docker pull --platform linux/arm64 " $1} '| sh
+# cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker pull --platform linux/arm64 " $1} '
+# cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker pull --platform linux/arm64 " $1} ' | sh
 
 # inspect Architectur
-# cat trigger.txt |awk '{print "docker image inspect  " $1 "| grep Architectur" } '
-# cat trigger.txt |awk '{print "docker image inspect  " $1 "| grep Architectur" } '| sh
+# cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker image inspect  " $1 "| grep Architectur" } '
+# cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker image inspect  " $1 "| grep Architectur" } ' | sh
 
 # docker tag
-cat trigger.txt |awk '{print "docker tag "$1 " " $2} ' | tee ./docker_tag.sh
-sh ./docker_tag.sh 
-#cat trigger.txt |awk '{print "docker tag "$1 " " $2} '| sh
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker tag "$1 " " $2} '
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker tag "$1 " " $2} ' | sh
 
 # docker push
-cat trigger.txt |awk '{print "docker push " $2} ' | tee ./docker_push.sh
-sh ./docker_push.sh 
-#cat trigger.txt |awk '{print "docker push " $2} '| sh
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} '
+cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} ' | sh
 
 
-
-
-
-
+# debug
+echo '$MM_NOTIFY_URL: ' $MM_NOTIFY_URL 
+echo '$ALIYUN_REGISTRY: ' $ALIYUN_REGISTRY 
+echo '$ALIYUN_REGISTRY_USER: ' $ALIYUN_REGISTRY_USER 
+echo '$ALIYUN_REGISTRY_PASSWORD: ' $ALIYUN_REGISTRY_PASSWORD 
 
 

@@ -34,19 +34,7 @@ jobs:
         data=`cat trigger.txt`
         
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
-        #sh pull.sh
-        
-        # docker pull，不指定 cpu 架构
-        cat trigger.txt |awk '{print "docker pull " $1} ' | tee ./docker_pull.sh 
-        sh ./docker_pull.sh 
-        
-        # docker tag
-        cat trigger.txt |awk '{print "docker tag "$1 " " $2} ' | tee ./docker_tag.sh
-        sh ./docker_tag.sh 
-        
-        # docker push
-        cat trigger.txt |awk '{print "docker push " $2} ' | tee ./docker_push.sh
-        sh ./docker_push.sh 
+        sh pull.sh
         
         if ! [ $? == 0 ];then
           curl -X POST -H 'Content-Type: application/json' \
