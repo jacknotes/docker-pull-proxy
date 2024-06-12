@@ -1,1 +1,6 @@
-nginx:1.26.1-alpine https://harbor.homsom.com/public/nginx:1.26.1-alpine
+# 源镜像 目的镜像
+whyour/qinglong:2.15.16 harbor.homsom.com/public/whyour/qinglong:2.15.16
+busybox:stable-musl harbor.homsom.com/public/busybox:stable-musl
+ikubernetes/admin-box:v1.2 harbor.homsom.com/public/ikubernetes/admin-box:v1.2
+
+
