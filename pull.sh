@@ -24,5 +24,8 @@ cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker tag "$1 " " $2} ' | sh
 cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} '
 cat trigger.txt | grep -Ev '^#|^$' | awk '{print "docker push " $2} ' | sh
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dev
