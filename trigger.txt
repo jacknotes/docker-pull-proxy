@@ -1,5 +1,7 @@
 # 源镜像 目的镜像
-busybox:stable harbor.homsom.com/public/busybox:stable
-
+mysql:5.7 harbor.homsom.com/public/mysql:5.7
+redis:3.2.8 harbor.homsom.com/public/redis:3.2.8
+rabbitmq:management harbor.homsom.com/public/rabbitmq:management
+nginx harbor.homsom.com/public/nginx
 
 
