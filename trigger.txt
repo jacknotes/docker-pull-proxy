@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-python:3.6-slim harbor.homsom.com/public/python:3.6-slim
+busybox:stable harbor.homsom.com/public/busybox:stable
 
 
 
