@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-haproxy:2.0.25-alpine harbor.homsom.com/public/haproxy:2.0.25-alpine
-docker.io/kubernetesui/metrics-scraper:v1.0.8 harbor.homsom.com/public/docker.io/kubernetesui/metrics-scraper:v1.0.8
+maven:3.9.4-sapmachine-21 harbor.homsom.com/public/maven:3.9.4-sapmachine-21
+
 
 
