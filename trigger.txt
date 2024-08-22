@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-alpine:3.20.1 harbor.homsom.com/public/alpine:3.20.1
+ghcr.io/daocloud/crproxy/crproxy:v0.9.1 harbor.homsom.com/public/ghcr.io/daocloud/crproxy/crproxy:v0.9.1
 
 
 
