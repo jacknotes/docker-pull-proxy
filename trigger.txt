@@ -1,5 +1,4 @@
 # 源镜像 目的镜像
-docker.io/istio/proxyv2:1.13.5 harbor.homsom.com/public/docker.io/istio/proxyv2:1.13.5 
-
+velero/velero:v1.11.0 harbor.homsom.com/public/velero/velero:v1.11.0
 
 
