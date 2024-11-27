@@ -1,4 +1,4 @@
 # 源镜像 目的镜像
-mysql:5.6 harbor.homsom.com/public/mysql:5.6
+buzhiyun/kafka-eagle:latest harbor.homsom.com/public/buzhiyun/kafka-eagle:latest
 
 
