@@ -1,5 +1,4 @@
 # 源镜像 目的镜像
-zabbix/zabbix-proxy-mysql:centos-3.4.15
- harbor.homsom.com/public/zabbix/zabbix-proxy-mysql:centos-3.4.15
+zabbix/zabbix-proxy-mysql:centos-3.4.15 harbor.homsom.com/public/zabbix/zabbix-proxy-mysql:centos-3.4.15
 
 
