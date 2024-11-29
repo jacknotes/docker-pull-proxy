@@ -1,4 +1,5 @@
 # 源镜像 目的镜像
-buzhiyun/kafka-eagle:latest harbor.homsom.com/public/buzhiyun/kafka-eagle:latest
+zabbix/zabbix-proxy-mysql:centos-3.4.15
+ harbor.homsom.com/public/zabbix/zabbix-proxy-mysql:centos-3.4.15
 
 
