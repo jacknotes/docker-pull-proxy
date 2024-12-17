@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-elastic/filebeat:7.17.23 harbor.homsom.com/public/elastic/filebeat:7.17.23
+rustdesk/rustdesk-server:1.1.12 harbor.homsom.com/public/rustdesk/rustdesk-server:1.1.12
 
 
 
