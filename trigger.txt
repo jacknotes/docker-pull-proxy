@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-rustdesk/rustdesk-server:1.1.12 harbor.homsom.com/public/rustdesk/rustdesk-server:1.1.12
+node:21.7.3-alpine harbor.homsom.com/public/node:21.7.3-alpine
 
 
 
