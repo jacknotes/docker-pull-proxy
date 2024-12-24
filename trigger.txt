@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-redis:5.0.5 harbor.homsom.com/public/redis:5.0.5
+docker.io/jc21/nginx-proxy-manager:latest harbor.homsom.com/public/docker.io/jc21/nginx-proxy-manager:latest
 
 
 
