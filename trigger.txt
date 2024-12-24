@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-node:21.7.3-alpine harbor.homsom.com/public/node:21.7.3-alpine
+redis:5.0.5 harbor.homsom.com/public/redis:5.0.5
 
 
 
