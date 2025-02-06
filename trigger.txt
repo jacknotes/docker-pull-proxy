@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-mongo:8.0.4-noble harbor.homsom.com/public/mongo:8.0.4-noble
+mongo:4.2 harbor.homsom.com/public/mongo:4.2
 
 
 
