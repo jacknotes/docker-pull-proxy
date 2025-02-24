@@ -1,5 +1,8 @@
 # 源镜像 目的镜像
-node:23.7.0-alpine harbor.homsom.com/public/node:23.7.0-alpine
+docker.io/kubeshark/worker:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/worker:v52.3.92
+docker.io/kubeshark/hub:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/hub:v52.3.92
+docker.io/kubeshark/front:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/front:v52.3.92
+
 
 
 
