@@ -1,9 +1,7 @@
 # 源镜像 目的镜像
-docker.io/kubeshark/worker:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/worker:v52.3.92
-docker.io/kubeshark/hub:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/hub:v52.3.92
-docker.io/kubeshark/front:v52.3.92 harbor.homsom.com/public/docker.io/kubeshark/front:v52.3.92
-
-
+docker.io/kubeshark/worker:v52.3.96 harbor.homsom.com/public/docker.io/kubeshark/worker:v52.3.96
+docker.io/kubeshark/hub:v52.3.96 harbor.homsom.com/public/docker.io/kubeshark/hub:v52.3.96
+docker.io/kubeshark/front:v52.3.96 harbor.homsom.com/public/docker.io/kubeshark/front:v52.3.96
 
 
 
