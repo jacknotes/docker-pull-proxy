@@ -1,7 +1,5 @@
 # 源镜像 目的镜像
-docker.io/kubeshark/worker:v52.4 harbor.homsom.com/public/docker.io/kubeshark/worker:v52.4
-docker.io/kubeshark/hub:v52.4 harbor.homsom.com/public/docker.io/kubeshark/hub:v52.4
-docker.io/kubeshark/front:v52.4 harbor.homsom.com/public/docker.io/kubeshark/front:v52.4
+gitlab/gitlab-ce:18.2.6-ce.0 harbor.homsom.com/public/gitlab/gitlab-ce:18.2.6-ce.0
 
 
 
