@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
 debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
-bitnami/etcd:3.5 harbor.homsom.com/public/bitnami/etcd:3.5
+rancher/etcd:v3.4.13 harbor.homsom.com/public/rancher/etcd:v3.4.13
 
 
