@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
-mongo:7.0.24 harbor.homsom.com/public/mongo:7.0.24
-
+debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
+bitnami/etcd:3.5 harbor.homsom.com/public/bitnami/etcd:3.5
 
 
