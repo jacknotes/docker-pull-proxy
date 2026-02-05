@@ -1,5 +1,5 @@
 # 源镜像 目的镜像
 #debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
-bitsensor/elastalert:latest harbor.homsom.com/public/bitsensor/elastalert:latest
+jertel/elastalert2:2.27.0 harbor.homsom.com/public/jertel/elastalert2:2.27.0
 
 
