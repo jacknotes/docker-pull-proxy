@@ -1,6 +1,6 @@
 # 源镜像 目的镜像
 #debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
-jertel/elastalert2:2.13.1 harbor.homsom.com/public/jertel/elastalert2:2.13.1
+jertel/elastalert2:2.0.3 harbor.homsom.com/public/jertel/elastalert2:2.0.3
 
 
 
