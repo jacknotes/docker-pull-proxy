@@ -1,6 +1,6 @@
 # 源镜像 目的镜像
 #debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
-#bitsensor/elastalert:2.0.0 harbor.homsom.com/public/bitsensor/elastalert:2.0.0
+node:20.20.1-alpine3.23 harbor.homsom.com/public/node:20.20.1-alpine3.23
 
 
 
