@@ -1,6 +1,6 @@
 # 源镜像 目的镜像
 #debian:bookworm-slim harbor.homsom.com/public/debian:bookworm-slim
-node:20.20.1-alpine3.23 harbor.homsom.com/public/node:20.20.1-alpine3.23
+sebp/elk:7.17.5 harbor.homsom.com/public/sebp/elk:7.17.5
 
 
 
